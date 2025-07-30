@@ -1,0 +1,117 @@
+/* Reset & Font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 960px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.1);
+}
+
+/* Glass Cards */
+.glass-card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  margin: 20px 0;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.2);
+  transition: transform 0.3s ease;
+}
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Header */
+.glass-header {
+  text-align: center;
+  padding: 10px;
+  font-size: 24px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  color: #00ffff;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* Inputs & Buttons */
+.search-section input {
+  width: 70%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.search-section button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: #00ffff;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+.search-section button:hover {
+  background: #00cfcf;
+}
+
+/* Weather Info */
+.weather-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Forecast Grid */
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 15px;
+}
+.forecast-grid .card {
+  background: rgba(255, 255, 255, 0.07);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+/* Footer */
+.glass-footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .search-section input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .search-section button {
+    width: 100%;
+  }
+}

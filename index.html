@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Salauddin's Weather Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header class="glass-header">
+      <h1>☁️ NovaWeather</h1>
+      <p>Your weather</p>
+    </header>
+
+    <section class="search-section glass-card">
+      <input type="text" placeholder="Enter city name..." id="cityInput" />
+      <button id="searchBtn">🔍 Search</button>
+    </section>
+
+    <section class="weather-section glass-card">
+      <h2 id="location">City Name</h2>
+      <div id="weatherInfo" class="weather-data">
+        <!-- Weather data loads here dynamically -->
+      </div>
+    </section>
+
+    <section class="forecast-section glass-card">
+      <h3>📅 5-Day Forecast</h3>
+      <div class="forecast-grid" id="forecastGrid">
+        <!-- Forecast cards appear here -->
+      </div>
+    </section>
+
+    <footer class="glass-footer">
+      <p>Made by Salauddin ⚡️</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
